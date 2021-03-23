@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+        font-family: Rubik; /* Гарнитура шрифта */
+        src: url(static/Rubik-Medium.ttf); /* Путь к файлу со шрифтом */
+        }
+        .text-color {
+            color: white !important;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img/Blue_beetle_small.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: black;
+            background-position: center;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        .left-block, .right-block {
+            width: 50%;
+            display: inline-block;
+        }
+        .left-block {
+            float: left;
+            transform: translateY(75%);
+        }
+        .right-block {
+            float: right;
+            transform: translateY(25%);
+        }
+        table,form {
+            margin: 0 auto;
+            width: 80%;
+            border-spacing: 13px 7px;
+            background-color: rgb(0 186 255 / 59%);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        th {
+            border: none !important;
+            color: #fff !important;
+            text-shadow: #000 -1px 1px 5px;
+        }
+        th, td {
+            border-radius: 9%;
+            width: 25%;
+            height: 40px;
+            font-family: 'Rubik';
+            color:rgb(0, 0, 0);
+            background-color: rgb(0, 195, 255);
+            text-align: center;
+            font-size: 15px;
+        }
+        td:nth-child(2), td:nth-child(1)
+        {
+            text-align: left;
+            padding-left: 7px;
+        }
+        td:nth-child(3)
+        {
+            font-size: 13px;
+        }
+
+        form {
+            width: 45% !important;
+            font-family: 'Rubik';
+            color: #fff;
+        }
+        #text-lable {
+            display: inline-block;
+            width:  100%;
+        }
+        #text-lable p{
+            vertical-align: middle;
+            padding-top: 5px;
+            margin: 0;
+            display: inline-block;
+        }
+        #text-lable label {
+            display: block;
+            height: 31px;
+            margin-bottom: 10px;
+        }
+        #text-lable input {
+            width: 80%;
+            height: 25px;
+            border: 2px solid #000;
+            float: right;
+        }
+        #language {
+            border-right: 2px solid #000;
+            border-top: 2px solid #000;
+        }
+        #Gender {
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            padding-left: 5px;
+        }
+        #language, #Gender {
+            margin: 0;
+            width: 49%;
+            height: 150px;
+            display: inline-table;
+            margin-bottom: 10px;
+        }
+       
+        #language label, #Gender label {
+            width: 100%;
+            display: inline-block;
+            height: 35px;
+        }
+        #language label p, #Gender label p {
+            display: inline-block;
+        }
+        #language p, #Gender p {
+            margin: 0 0 10px 0;
+        }
+        select {
+            font-size: 15px;
+            width: 100%;
+            height: 30px;
+            font-family: 'Rubik';
+            background-color: rgb(0, 195, 255);
+        }
+        textarea {
+            width: 99%;
+            height: 200px;
+            position: relative;
+            vertical-align: top;
+            display: inline-block;
+            resize: vertical;
+            font-size: 20px;
+            border: none;
+            background-color: rgb(0, 195, 255);
+        }
+        #sub {
+            margin-top: 15px;
+            width: 100%;
+            height: 35px;
+            background-color: rgb(0, 195, 255);
+            font-size: 20px;
+            font-family: 'Rubik';
+            border: none;
+        }
+        .Title {
+            margin: 0 auto;
+            text-align: center;
+            color: rgb(0 186 255 / 59%);
+            font-family: 'Rubik';
+            font-size: 45px;
+            padding-top: 50px;
+        }
+        .Title p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="Title">
+        <p>Blue Beetle</p>
+    </div>
+    <div class="left-block">
+        <table>
+        <tr>
+            <th>Имя</th>
+            <th>Роль</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Сергей</td>
+            <td>Преподаватель</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>prepod@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Владислав</td>
+            <td>Преподаватель</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>prepod@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Евгения</td>
+            <td>Менеджер Проекта</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>pm@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Владимир</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <!-- <tr>
+            <td>Ирина</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Апрес</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Виктория</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ирина</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Павел</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Мария</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Максим-Святослав</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Марта</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Артем</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Богдан</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>ЮЛЯ</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Уляна</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Остап</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Юрій</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Володимир</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Софія</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Микола</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Поліна</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Владислав</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Владислав</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ярослав</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Дмитрий</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Anfisa</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Nataliia</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Roman</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Olha</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ulyana</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sasha</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sophia</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Rostyk</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Arsenii</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Marta</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Oksana</td>
+            <td>Студент</td>
+            <td>+38-ххх-хх-хх-ххх</td>
+            <td>stud@gmail.com</td>
+        </tr> -->
+        </table>
+    </div>
+    <div class="right-block">
+        <form action="">
+            <div id="text-lable">
+                <label for="Name"><p>Имя</p><input id="Name" type="text"></label>
+                <label for="role"><p>Роль</p><input id="role" type="text"></label>
+            </div>
+            
+            <div id="language">
+                <p>Выберете язык:</p>
+                <label for="Lang"><input type="checkbox" name="lang"><p>Украинский</p></label>
+                <label for="Lang"><input type="checkbox" name="lang"><p>Русский</p></label>
+                <label for="Lang"><input type="checkbox" name="lang"><p>Английский</p></label>
+            </div>
+            <div id="Gender">
+                <p>Ваш пол:</p>
+                <label><input type="radio" name="gender"><p>M</p></label>
+                <label><input type="radio" name="gender"><p>Ж</p></label>
+                <select name="City" id="city">
+                    <option value="sel" selected disabled>Выберете город:</option>
+                    <option value="Kiev">Киев</option>
+                    <option value="Borispol">Борисполь</option>
+                    <option value="Zhytomyr">Житомир</option>
+                    <option value="Mariupol">Мариуполь</option>
+                </select>
+            </div>
+            <textarea placeholder="Задайте вопрос..."></textarea>
+            <input id="sub" type="submit" value="Отправить">
+            
+        </form>
+    </div>
+</body>
+</html>
