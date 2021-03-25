@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hm -2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Questionnaire for entering the dark forest</h1>
+    <div class="right-block">
+      <table id="t01">
+        <caption>
+          <strong>Contacts</strong>
+        </caption>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Phone number</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Harry</td>
+          <td>James Potter</td>
+          <td>50-60-35</td>
+          <td>owl@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Hermione</td>
+          <td>Jean Granger</td>
+          <td>20-35-54</td>
+          <td>cat@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Ronald</td>
+          <td>Bilius Weasley</td>
+          <td>30-40-57</td>
+          <td>rat@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Cedric</td>
+          <td>Diggory</td>
+          <td>34-67-87</td>
+          <td>snake@gmail.com</td>
+        </tr>
+      </table>
+    </div>
+    <form action="#" method="GET" enctype="multipart/form-data">
+      <div class="name">
+        <label for="first name">First name</label> <br />
+        <input
+          tabindex="1"
+          placeholder="Enter your first name"
+          type="text"
+          id="first_mane"
+          name="first_name"
+          value=""
+        />
+        <br />
+        <label for="last_name">Last name</label> <br />
+        <input
+          tabindex="2"
+          placeholder="Enter your last name"
+          type="text"
+          id="last_mane"
+          name="last_name"
+          value=""
+        />
+      </div>
+      <div class="gender">
+        <p>Choose your gender</p>
+        <input type="radio" value="woman" name="gender" id="woman" />
+        <label for="woman">Woman</label><br />
+        <input type="radio" value="man" name="gender" id="woman" />
+        <label for="man">Man</label>
+      </div>
+      <div class="faculty">
+        <p>What is your faculty?</p>
+        <img src="img/Gryffondor.png" alt="Gryffondor" width="30px" />
+        <input type="radio" value="Gryffindor" name="faculty" id="gr" />
+        <label for="gr">Gryffindor</label><br />
+        <img src="img/Slytherin.png" alt="Slytherin" width="30px" />
+        <input type="radio" value="Slytherin" name="faculty" id="sl" />
+        <label for="sl">Slytherin</label><br />
+        <img src="img/Ravenclaw.png" alt="Ravenclaw" width="30px" />
+        <input type="radio" value="Ravenclaw" name="faculty" id="rv" />
+        <label for="rv">Ravenclaw</label><br />
+        <img src="img/Hufflepuff.png" alt="Hufflepuff" width="30px" />
+        <input type="radio" value="Hufflepuff" name="faculty" id="hf" />
+        <label for="hf">Hufflepuff</label><br />
+      </div>
+      <br />
+      <div class="city">
+        <label for="city">Choose your city</label><br />
+        <select name="city" id="city">
+          <option value="none" selected disabled hidden>
+            Select an option
+          </option>
+          <option value="Kyiv">Kyiv</option>
+          <option value="Lviv">Lviv</option>
+          <option value="Ternopil">Ternopil</option>
+          <option value="another">another</option>
+        </select>
+      </div>
+      <div class="language">
+        <p>Choose your language</p>
+        <input type="checkbox" name="Ukrainian" value="yes" id="UK" />
+        <label for="UK">Ukrainian</label>
+        <input type="checkbox" name="Russian" value="Yes" id="RU" />
+        <label for="RU">Russian</label>
+        <input type="checkbox" name="English" value="yes" id="EN" />
+        <label for="EN">English</label>
+        <input type="checkbox" name="Parseltongue" value="yes" id="PR" />
+        <label for="PR">Parseltongue</label>
+      </div>
+      <br />
+      <div>
+        <textarea
+          name="information"
+          cols="30"
+          rows="10"
+          maxlength="350"
+          placeholder="Write what do you need to take with you"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" id="sub" />
+        <input type="reset" value="Reset" id="res" />
+      </div>
+    </form>
+  </body>
+</html>

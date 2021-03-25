@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/hp_spiders.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  background-color: #88888860;
+}
+caption {
+  color: #ffffff;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(0, 0, 0, 0.897);
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+#t01 {
+  background-color: #7778771a;
+}
+#t01 tr:nth-child(even) {
+  background-color: #88888860;
+}
+#t01 tr:nth-child(odd) {
+  background-color: #80808025;
+}
+#t01 th {
+  background-color: #000000ef;
+  color: white;
+}
+.name,
+.gender,
+.faculty,
+.language,
+.city {
+  color: white;
+}
+.right-block {
+  float: right;
+  padding-right: 10%;
+}
+#sub,
+#res {
+  margin: 15px;
+  width: 10%;
+  height: 30px;
+}
