@@ -69,7 +69,13 @@ header {
     position: relative;
     margin-right: 25px;
 }
-[src="img/simple-icons_windows.png"] {
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+[src="img/apple.svg"] {
+    top: -2px;
+}
+[src="img/windows.svg"] {
     top: -5px;
 }
 .box_right .content [src="img/Video_bg_left.png"] {
