@@ -118,6 +118,10 @@ header {
     padding-left: 31px;
     margin-bottom: 24px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .body .box_right .content .input_text:first-child {
     margin-right: 30px;
 }
