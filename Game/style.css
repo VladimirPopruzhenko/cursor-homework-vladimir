@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000 !important;
+	text-align: center !important;
+}
+@font-face {
+    font-family: My; /* Имя шрифта */
+    src: url(My.ttf); /* Путь к файлу со шрифтом */
+}
+.H {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.play-style-p {
+	font-size: 80px;
+	display: inline-block;
+}
+.play-style-p-p {
+	font-size: 80px;
+	position: absolute;
+	display: inline-block;
+	transform: translateX(-99999999%);
+}
+.play-style-p-p1 {
+	font-size: 80px;
+	position: absolute;
+	display: inline-block;
+	transform: translateX(-99999999%);
+}
+.map {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+}
+.section {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section1 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section2 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section3 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section4 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section5 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section6 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section7 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
+.section8 {
+	width: 197px;
+	height: 196px;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+}
