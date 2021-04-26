@@ -5,21 +5,21 @@ body {
 .container {
     width: 230px;
 }
-.wrapper {
+.blocks-wrapper {
     display: grid;
     grid-template: repeat(6,50px) / repeat(4,50px);
     grid-gap: 10px;
     margin: 0 auto;
 }
-.wrapper div {
+.blocks-wrapper div {
     background-color: dimgray;
     width: 50px;
     height: 50px;
 }
-.wrapper div:nth-child(n + 21) {
+.blocks-wrapper div:nth-child(n + 21) {
     background-color: cornflowerblue;
 }
-.wrapper div:nth-child(4n + 3) {
+.blocks-wrapper div:nth-child(4n + 3) {
     background-color: firebrick;
 }
 .container-input {
@@ -61,7 +61,7 @@ body {
     background: #0a7454;
     color: rgb(145, 215, 255);
 }
-.container-input::before {
+.container-input::before, .container-input::after {
     content: "";
     position: relative;
     display: inline-block;
@@ -69,20 +69,14 @@ body {
     height: 10px;
     border-top: 2px solid #c4c4c4;
     border-bottom: 2px solid #c4c4c4;
-    top: 106px;
     z-index: -1;
 }
-.container-input::after {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 10px;
-    border-top: 2px solid #c4c4c4;
-    border-bottom: 2px solid #c4c4c4;
+.container-input::before {
+    top: 106px;
+}
+.container-input::after { 
     float: right;
     top: -106px;
-    z-index: -1;
 }
 @media (max-width: 430px) {
     .input {

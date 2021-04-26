@@ -1,0 +1,659 @@
+@font-face {
+    font-family: "Product Bold";
+    src: url(../fonts/ProductSansBold.ttf);
+}
+@font-face {
+    font-family: "Product Regular";
+    src: url(../fonts/ProductSansRegular.ttf);
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {    
+    font-family: Lato-BlackItalic;
+    src: url(../fonts/Lato-BlackItalic.ttf);
+}
+@font-face {    
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-BoldItalic;
+    src: url(../fonts/Lato-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-LightItalic;
+    src: url(../fonts/Lato-LightItalic.ttf);
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Thin;
+    src: url(../fonts/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: Lato-ThinItalic;
+    src: url(../fonts/Lato-ThinItalic.ttf);
+}
+
+.color-text {
+    --txt-clr-blue: #5282F0;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template: 665px 592px 592px 785px 431px 292px 625px 127px / 1fr;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/background-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #F4F6F9;
+    width: 100%;
+    height: 665px;
+}
+.header .header-container {
+    display: grid;
+    grid-template: 110px 555px / 1fr;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 163px;
+    position: relative;
+}
+.header .header__navigation {
+    width: 100%;
+    align-self: end;  
+    padding-left: 30px;
+}
+.header .header__navigation a {
+    text-decoration: none;
+}
+.header .header__navigation .logo-referense {
+    position: relative;
+}
+.header .header__navigation .logo-referense::before {
+    content: "";
+    background-image: url(../img/logo-header-nav.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    transform: translate(-115%, 0);
+}
+.header .header__navigation .logo-referense p {
+    color: #5282F0;
+    font-family: 'Product Bold';
+    font-size: 24px;
+    line-height: 29px;
+}
+.header .header__left-block {
+    width: 38%;
+    height: auto;
+    position: absolute;
+    justify-self: start;
+    align-self: center;
+    margin-left: 163px;
+    margin-top: 5%;
+}
+.header .header__left-block .left-block__text-big {
+    font-family: 'Lato-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.header .header__left-block .left-block__text-small { 
+    font-family: 'Lato-Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    width: 85%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.header .header__left-block .appstore-button {
+    display: inline-block;
+    max-width: 156px;
+    min-width: 106px;
+    width: 100%;
+    max-height: 101%;
+    height: 47px;
+    background-image: url(../img/AppleStore.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header .header__left-block .googleplay-button {
+    display: inline-block;
+    max-width: 156px;
+    min-width: 106px;
+    width: 100%;
+    max-height: 101%;
+    height: 47px;
+    background-image: url(../img/GooglePlay.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateX(15%);
+}
+.header .header__right-block img {
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.section_1 {
+    background: url(../img/football-comand.png);    
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 100%;
+    height: 592px;
+}
+
+.section-container {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    max-width: 1440px;
+    height: 592px;
+    margin: 0 auto;
+    padding: 0 163px;
+}
+.section__left-block {
+    height: 100%;
+    width: 100%;
+}
+.section__left-block .table-football {
+    display: grid;
+    grid-template: 78% 22% / 1fr 1fr;
+    max-width: 360px;
+    min-width: 345px;
+    width: 100%;
+    max-height: 220px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    font-family: 'Lato-Bold';
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+.section__left-block .table-football .text {
+    align-self: center;
+    padding-left: 16px;
+}
+.section__left-block .table-football .text p:nth-child(1) {
+    margin-top: 27px;
+    font-size: 16.7833px;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+.section__left-block .table-football .text p:nth-child(2) {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    min-width: 80px;
+    width: 50%;
+    margin: 14px 0;
+}
+.section__left-block .table-football .text p:nth-child(3) {
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000; 
+    font-family: "Lato-Regular";
+}
+.section__left-block .table-football .img-football-img {
+    position: relative;
+}
+.section__left-block .table-football .img-football-img img {
+    position: absolute;
+}
+.section__left-block .table-football .img-football-img img:nth-child(1) {
+    transform: translate(30%, 40%);
+    z-index: 1;
+}
+.section__left-block .table-football .img-football-img img:nth-child(2) {
+    transform: translate(95%, 40%);
+    z-index: 2;
+}
+.section__left-block .table-football .footer-table {
+    grid-area: 3 / 1 / 2 / 3;
+    background: #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 18.8812px;
+    line-height: 25px;
+    color: #4F4F4F;
+    padding: 14px 0 10px 16px;
+}
+.section__left-block .table-football .footer-table p {
+    font-family: "Lato-Regular";
+    display: inline-block;
+}
+.section__left-block .table-football .footer-table .click {
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    position: relative;
+    float: right;
+    margin-right: 25px;
+}
+.section__left-block .table-football .footer-table .click .line-click {
+    width: 27.29px;
+    height: 12.58px;
+    background: #979797;
+    border-radius: 104.896px;
+    position: absolute;
+    transform: translateY(40%);
+}
+.section__left-block .table-football .footer-table .click .elipse-click {
+    width: 21px;
+    height: 21px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-5px);
+}
+.section__left-block video {
+    transform: translate(30%, 135%);
+    max-width: 360px;
+    width: 100%; 
+}
+.section__right-block {
+    padding-left: 50px;
+    align-self: center;
+}
+.section-second .section__left-block {
+    align-self: center;
+    height: auto;
+}
+.section__right-block a, .section-second .section__left-block a {
+    text-decoration: none;
+    color: #00ADEE;
+    font-size: 16px;
+    font-family: "Lato-Bold";
+}
+
+.section__right-block .title, .section-second .section__left-block .title {
+    font-size: 28px;
+    line-height: 37px;  
+    font-family: "Lato-Bold";
+    margin: 27px 0;
+}
+.section__right-block .text, .section-second .section__left-block .text {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: "Lato-Regular";
+    color: #4F4F4F;
+    width: 75%;
+    margin: 0 0 22px 0;
+}
+.section-second {
+    background-image: url(../img/background-phone-second-section.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 592px;
+}
+.section-second .section__left-block .text {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: "Lato-Regular";
+    color: #4F4F4F;
+    width: 85%;
+    margin: 0 0 22px 0;
+}
+.section-third {
+    background-color: #00ADEE;
+    background-image: url(../img/background-third-section.png);
+    background-repeat: no-repeat;   
+    background-position: left center;
+    background-size: 100%;
+    width: 100%;
+    height: 785px;
+}
+.section-third-container {
+    display: grid;
+    grid-template: 175px auto auto auto / 1fr 1fr 1fr;
+    grid-gap: 0 8%;
+    max-width: 1440px;
+    height: 735px;
+    margin: 0 auto;
+    padding: 0 163px;
+    color: white;
+}
+.section-third-container .title {
+    grid-area: 1 / 1 / 1 / 4;
+    font-family: "Lato-Bold";
+    justify-self: center;
+    align-self: center;
+    font-size: 28px;
+    line-height: 37px;
+}
+.section-third-container .block-info {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 23px;
+}
+.section-fourth {
+    overflow: hidden;
+    width: 100%;
+    height: 431px;
+    position: relative;
+}
+.section-fourth .section-fourth-bg-color-left {
+    background: linear-gradient(to right, white, transparent  99%);
+    position: absolute;
+    width: 14%;
+    height: 431px;
+    top: 0;
+    left: 0;
+}
+.section-fourth .section-fourth-bg-color-right {
+    background: linear-gradient(to right, transparent  1%, white);
+    position: absolute;
+    width: 14%;
+    height: 431px;
+    top: 0;
+    right: 0;
+}
+.section-fourth .section-fourth-bg-color-left .arrow-gallary-button {
+    background-image: url(../img/arrow-left.png);
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+.section-fourth .section-fourth-bg-color-right .arrow-gallary-button {
+    background-image: url(../img/arrow-right.png);
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+}
+.section-fourth .title {
+    font-size: 28px;
+    line-height: 37px;
+    width: auto;
+    color: #333333;
+    display: table;
+    font-family: "Lato-Bold";
+    margin: 63px auto;
+}
+.section-fourth .container {
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template: 1fr 1fr 102px / 1fr;
+    margin: auto;
+}
+.list-cont {
+    position: relative;
+    width: 129.2%;
+    left: -15%;
+}
+.list-FAQ-block {
+    display: grid;
+    grid-template: 1fr / repeat(5,310px);
+    position: absolute;
+    gap: 0 5%;
+}
+
+.FAQ-block {
+    width: 100%;
+    max-width: 310px;
+    height: 100%;
+    max-height: 161px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px; 
+    display: grid;
+    grid-template: 63px 98px / 1fr;
+    justify-self: center;
+}
+.FAQ-block .title {
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    max-width: 264px;
+}
+.FAQ-block .contain-title {
+    display: flex;
+    position: relative;
+}
+.FAQ-block .contain-title::after {
+    content: "";
+    width: 15px;
+    height: 12px;
+    background-image: url(../img/twitter.svg);
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.FAQ-block .title img {
+    max-width: 30px;
+    width: 100%;
+    display: inline-block;
+}
+.FAQ-block .title .name {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Lato-Bold";
+    color: #333333;
+    display: inline-block;
+    align-self: center;
+    margin: auto 0 auto 5%;
+}
+.FAQ-block .text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+    font-family: "Lato-Regular";
+    max-width: 264px;
+    width: 100%;
+    justify-self: center;
+}
+.section-fourth .dots {
+    display: flex;
+}
+.section-fourth .dots img {
+    width: 143px;
+    height: 11px;
+    margin: auto;
+}
+.section-fifth {
+    background: #FAFAFA;
+}
+.section-fifth .container-fifth {
+    display: grid;
+    grid-template: 152px 140px / 1fr;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 163px;
+}
+.section-fifth .container-fifth .title {
+    display: flex;
+}
+.section-fifth .container-fifth .title p {
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    font-family: "Lato-Bold";
+    display: table;
+    width: auto;
+    margin: auto;
+}
+.section-fifth .container-fifth .company-label {
+    align-self: start;
+    justify-self: center;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    grid-gap: 0 7%;
+}
+.section-fifth .container-fifth .company-label img {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+}
+.section-last {
+    background-image: url(../img/back-last.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    height: 625px;
+}
+.section-last .container-last {
+    display: grid;
+    grid-template: 100% / 1fr;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 163px;
+    position: relative;
+}
+.section-last .container-last .right-block {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    justify-self: end;
+    align-self: center;
+}
+.section-last .container-last .right-block .left-block__text-big {
+    font-family: 'Lato-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.section-last .container-last .right-block .left-block__text-small { 
+    font-family: 'Lato-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4F4F4F;
+    width: 82%;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin: 35px 0 50px;
+}
+.section-last .container-last .right-block .appstore-button {
+    display: inline-block;
+    max-width: 156px;
+    min-width: 106px;
+    width: 100%;
+    max-height: 101%;
+    height: 47px;
+    background-image: url(../img/AppleStore.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.section-last .container-last .right-block .googleplay-button {
+    display: inline-block;
+    max-width: 156px;
+    min-width: 106px;
+    width: 100%;
+    max-height: 101%;
+    height: 47px;
+    background-image: url(../img/GooglePlay.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: translateX(15%);
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #00ADEE;
+    align-self: flex-end;
+}
+.footer .container-footer {
+    display: grid;
+    grid-template: 1fr / 30% 45% 25%;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    padding: 0 163px;
+    margin: 0 auto;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer .container-footer .logo-referense {
+    position: relative;
+}
+
+.footer .container-footer .logo-referense p {
+    color: #fff;
+    font-family: 'Product Bold';
+    font-size: 24px;
+    line-height: 29px;
+    display: inline-block;
+    width: auto;
+}
+#logo-foot {
+    align-self: center;
+}
+.footer .text {
+    display: flex;
+}
+.footer .text a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "Lato-Bold";
+    color: #fff;
+    display: inline-block;
+    margin: auto;
+}
+.footer .social-network {
+    display: flex;
+    justify-self: end;
+    align-self: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.footer .social-network a {
+    display: inline-block;
+    width: 25px;
+}
+.footer .social-network a + a {
+    margin-left: 10%;
+}
