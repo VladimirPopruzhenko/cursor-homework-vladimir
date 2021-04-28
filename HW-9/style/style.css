@@ -569,3 +569,8 @@ section div:nth-child(2) {
         font-size: 20px;
     }
 }
+@media (max-width: 385px) {
+    .post-follow div p:first-child {
+        margin-right: 12px;
+    }
+}
