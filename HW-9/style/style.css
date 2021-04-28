@@ -28,17 +28,19 @@
     max-width: 100%;
 }
 .header__search-input {
-    justify-self: start;
+    justify-self: center;
     position: relative;
+    width: 69%;
 }
 .header__search-input input {
-    max-width: 220%;
-    width: 100%;
+    width: 93%;
     text-align: center;
     background: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 .header__search-input div::before {
     content: "";
@@ -48,7 +50,7 @@
     height: 9px;
     position: absolute;
     top: 33%;
-    left: 30%;
+    left: 35%;
 }
 .header__list-nav {
     display: grid;
@@ -59,6 +61,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: end;
+    cursor: pointer;
 }
 .header__ava-mini {
     border-radius: 50%;
@@ -85,7 +88,7 @@
     background: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
-    font-family: "Helvetica";
+    font-family: 'Roboto', sans-serif;
     border-radius: 50%;
 }
 
@@ -173,7 +176,7 @@
     width: 100%;
 }
 .login {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 26px;
     color: #262626;
     font-weight: 700;
@@ -241,7 +244,7 @@
 }
 .post-follow div p:first-child {
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 700;
     display: inline-block;
@@ -249,7 +252,7 @@
 }
 .post-follow div p:last-child {
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 500;
     display: inline-block;
@@ -280,14 +283,14 @@
 }
 .name {
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 700;
     display: inline-block;
 }
 .info {
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #262626;
     font-weight: 500;
     display: inline-block;
@@ -296,7 +299,7 @@
     color: #133768;
     font-weight: 700;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
 }
 .info-account {
@@ -319,7 +322,7 @@
     width: 80px;
     justify-items: center;
     color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
     grid-gap: 15px;
@@ -390,7 +393,7 @@ section {
 }
 .page-change p {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 12px;
 }
@@ -448,13 +451,13 @@ section div:nth-child(2) {
 .info p {
     margin: 0;
     font-size: 200%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 .info input {
     width: 70%;
     height: 50%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     border-radius: 3px;
     border: none;
