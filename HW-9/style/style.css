@@ -385,7 +385,7 @@ section {
 .page-change {
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 25%;
+    width: 200px;
     height: 55px;
     margin: 0 auto;
     justify-items: center;
