@@ -27,7 +27,7 @@
                         </div>
                     </nav>
                     <div class="header__search-input">
-                        <div><input type="text" placeholder="Search"></div>
+                        <div id="fakeElem" class="fakeElem"><input id="search" type="text" class="me-2" placeholder="Search" aria-label="Search"></div>
                     </div>
                     <ul class="header__ul">
                         <li class="header__li">
@@ -276,6 +276,16 @@
 </body>
 </html>
 <script>
+    $('#search').on('keyup',function(){
+        var str = $(this),
+        val = str.val().length;
+        if (val.length >= 1) {
+            $('#fakeElem').removeClass('fakeElem').addClass('fakeElem_none');
+        }else{
+            $('#fakeElem').removeClass('fakeElem_none').addClass('fakeElem');
+        }
+    });
+
     function InfoBlock(id) {
       $(id).toggle();
     }

@@ -42,7 +42,7 @@
     font-size: 14px;
     font-weight: 400;
 }
-.header__search-input div::before {
+.header__search-input .fakeElem::before {
     content: "";
     background-image: url(../img/search.svg);
     background-size: 100%;
@@ -51,6 +51,9 @@
     position: absolute;
     top: 33%;
     left: 35%;
+}
+.header__search-input .fakeElem_none::before {
+    content: none;
 }
 .header__list-nav {
     display: grid;
@@ -340,6 +343,8 @@
 .storis img {
     width: 100%;
     height: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 .cap__bottom {
     height: 50%;
