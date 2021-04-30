@@ -1,0 +1,456 @@
+.main-block {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(37, 37, 37);
+}
+.swords, .balance {
+    max-width: 400px;
+    max-height: 400px;
+    height: 100%;
+    width: 100%;
+}
+.swords__list {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.sword-blue {
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(to right, white 15%, rgb(85, 85, 85) 15%, rgb(84, 84, 85) 30%, transparent 30%);
+    position: absolute;
+    transform: rotate(315deg) translate(-45%, 1040%);
+}
+.sword-red {
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(to right, white 15%, rgb(85, 85, 85) 15%, rgb(84, 84, 85) 30%, transparent 30%);
+    position: absolute;
+    transform: rotate(585deg) translate(-45%, -1040%);
+}
+.sword-blue .lazer-first {
+    height: 100%;
+    left: 30%;
+    position: absolute;
+    transform:rotate(180deg);
+    box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .0),
+    20px 0px 15px rgba(255, 255, 255, .0), 
+    0px 0px 7px rgba(255, 255, 255, .0), 
+    0px 0px 3px rgba(255, 255, 255, .0), 
+    0px 0px 25px 15px rgba(0, 153, 255, .0);
+    animation-name: width-lazer-blue-none;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.sword-red .lazer-first {
+    height: 100%;
+    left: 30%;
+    position: absolute;
+    transform:rotate(180deg);
+    box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .0),
+    20px 0px 15px rgba(255, 255, 255, .0), 
+    0px 0px 7px rgba(255, 255, 255, .0), 
+    0px 0px 3px rgba(255, 255, 255, 0), 
+    0px 0px 25px 15px rgba(248, 34, 34, 0);
+    animation-name: width-lazer-red-none;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.sword-blue .lazer {
+    height: 100%;
+    left: 30%;
+    position: absolute;
+    transform:rotate(180deg);
+    box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .0),
+    20px 0px 15px rgba(255, 255, 255, .0), 
+    0px 0px 7px rgba(255, 255, 255, .0), 
+    0px 0px 3px rgba(255, 255, 255, .0), 
+    0px 0px 25px 15px rgba(0, 153, 255, .0);
+}
+.sword-red .lazer {
+    height: 100%;
+    left: 30%;
+    position: absolute;
+    transform:rotate(180deg);
+    box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .0),
+    20px 0px 15px rgba(255, 255, 255, .0), 
+    0px 0px 7px rgba(255, 255, 255, .0), 
+    0px 0px 3px rgba(255, 255, 255, 0), 
+    0px 0px 25px 15px rgba(248, 34, 34, 0);
+}
+.swords__list::before {
+    content: "";
+    width: 100%;
+    height: 1em;
+    background: linear-gradient(to left, white 15%, rgb(85, 85, 85) 15%, rgb(84, 84, 85) 30%, white 30% );
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    transform: translateY(-300%);
+}
+.swords:hover .sword-blue .lazer-first {
+    animation-name: width-lazer, sword-lazer-blue;
+    animation-duration: 0.3s, 1s;
+    animation-timing-function: linear , cubic-bezier(0,1.7,0,-1.18);
+    animation-fill-mode: forwards;  
+}
+.swords:hover .sword-red .lazer-first {
+    animation-name: width-lazer, sword-lazer-red;
+    animation-duration: 0.3s, 1s;
+    animation-timing-function: linear , cubic-bezier(0,1.7,0,-1.18);
+    animation-fill-mode: forwards;  
+}
+.swords-animation .sword-blue {
+    animation-name: sword-blue;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;  
+}
+.swords-animation .sword-red {
+    animation-name: sword-red;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;  
+}
+.swords-animation .swords__list::before {
+    animation-name: fake-elem;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;  
+}
+
+.swords-animation-reverse .sword-blue {
+    animation-name: sword-blue-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.swords-animation-reverse .sword-red {
+    animation-name: sword-red-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.swords-animation-reverse .swords__list::before {
+    animation-name: fake-elem-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+@keyframes sword-lazer-blue {
+    0% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .9),
+        0px 0px 15px rgba(255, 255, 255, .5), 
+        0px 0px 7px rgba(255, 255, 255, .5), 
+        0px 0px 3px rgba(255, 255, 255, .5), 
+        0px 0px 25px 15px rgba(0, 153, 255, .5);
+    }
+    20% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .6),
+        0px 0px 15px rgba(255, 255, 255, .2), 
+        0px 0px 7px rgba(255, 255, 255, .2), 
+        0px 0px 3px rgba(255, 255, 255, .2), 
+        0px 0px 25px 15px rgba(0, 153, 255, .2);
+    }
+    50% {  
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        0px 0px 15px rgba(255, 255, 255, .7), 
+        0px 0px 7px rgba(255, 255, 255, .7), 
+        0px 0px 3px rgba(255, 255, 255, .7), 
+        0px 0px 25px 15px rgba(0, 153, 255, .7);
+    }
+    60% {   
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .5),
+        0px 0px 15px rgba(255, 255, 255, .1), 
+        0px 0px 7px rgba(255, 255, 255, .1), 
+        0px 0px 3px rgba(255, 255, 255, .1), 
+        0px 0px 25px 15px rgba(0, 153, 255, .1);
+    }
+    100% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        0px 0px 15px rgba(255, 255, 255, 1), 
+        0px 0px 7px rgba(255, 255, 255, 1), 
+        0px 0px 3px rgba(255, 255, 255, 1), 
+        0px 0px 25px 15px rgba(0, 153, 255, 1);
+    }
+}
+@keyframes sword-lazer-red {
+    0% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .9),
+        0px 0px 15px rgba(255, 255, 255, .5), 
+        0px 0px 7px rgba(255, 255, 255, .5), 
+        0px 0px 3px rgba(255, 255, 255, .5), 
+        0px 0px 25px 15px rgba(248, 34, 34, .5);
+    }
+    20% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .6),
+        0px 0px 15px rgba(255, 255, 255, .2), 
+        0px 0px 7px rgba(255, 255, 255, .2), 
+        0px 0px 3px rgba(255, 255, 255, .2), 
+        0px 0px 25px 15px rgba(248, 34, 34, .2);
+    }
+    50% {  
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        0px 0px 15px rgba(255, 255, 255, .7), 
+        0px 0px 7px rgba(255, 255, 255, .7), 
+        0px 0px 3px rgba(255, 255, 255, .7), 
+        0px 0px 25px 15px rgba(248, 34, 34, .7);
+    }
+    60% {   
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, .5),
+        0px 0px 15px rgba(255, 255, 255, .1), 
+        0px 0px 7px rgba(255, 255, 255, .1), 
+        0px 0px 3px rgba(255, 255, 255, .1), 
+        0px 0px 25px 15px rgba(248, 34, 34, .1);
+    }
+    100% {
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        0px 0px 15px rgba(255, 255, 255, 1), 
+        0px 0px 7px rgba(255, 255, 255, 1), 
+        0px 0px 3px rgba(255, 255, 255, 1), 
+        0px 0px 25px 15px rgba(248, 34, 34, 1);
+    }
+}
+@keyframes width-lazer {
+    0% {
+        width: 0;
+    }
+    100%  {
+        width: 70%;
+    }
+}
+@keyframes width-lazer-blue-none {
+    0% {
+        width: 70%;
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        20px 0px 15px rgba(255, 255, 255, 1), 
+        0px 0px 7px rgba(255, 255, 255, 1), 
+        0px 0px 3px rgba(255, 255, 255, 1), 
+        0px 0px 25px 15px rgba(0, 153, 255, 1);
+    }
+    100%  {
+        width: 0;
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 0),
+        20px 0px 15px rgba(255, 255, 255, 0), 
+        0px 0px 7px rgba(255, 255, 255, 0), 
+        0px 0px 3px rgba(255, 255, 255,  0), 
+        0px 0px 25px 15px rgba(0, 153, 255, 0);
+    }
+}
+@keyframes width-lazer-red-none {
+    0% {
+        width: 70%;
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 1),
+        20px 0px 15px rgba(255, 255, 255, 1), 
+        0px 0px 7px rgba(255, 255, 255, 1), 
+        0px 0px 3px rgba(255, 255, 255, 1), 
+        0px 0px 25px 15px rgba(248, 34, 34, 1);
+    }
+    100%  {
+        width: 0;
+        box-shadow: inset 0px 0px 500px rgba(255, 255, 255, 0),
+        20px 0px 15px rgba(255, 255, 255, 0), 
+        0px 0px 7px rgba(255, 255, 255, 0), 
+        0px 0px 3px rgba(255, 255, 255,  0), 
+        0px 0px 25px 15px rgba(0, 153, 255, 0);
+    }
+}
+@keyframes sword-blue {
+    0% {
+        transform: rotate(315deg) translate(-45%, 1040%);
+    }
+    50% {
+        transform: rotate(157.5deg) translate(-22.5%, 520%);
+    }
+    100% {
+        transform: rotate(0deg) translate(-0%, 1250%);
+    }
+}
+@keyframes sword-red {
+    0% {
+        transform: rotate(585deg) translate(-45%, -1040%);
+    }
+    50% {
+        transform: rotate(742.5deg) translate(-22.5%, -520%);
+    }
+    100% {
+        transform: rotate(900deg) translate(-0%, -1750%);
+    }
+}
+@keyframes sword-blue-reverse {
+    0% {
+        transform: rotate(0deg) translate(-0%, 1250%);
+    }
+    50% {
+        transform: rotate(157.5deg) translate(-22.5%, 520%);
+    }
+    100% {
+        transform: rotate(315deg) translate(-45%, 1040%);
+    }
+}
+@keyframes sword-red-reverse {
+    0% {
+        transform: rotate(900deg) translate(-0%, -1750%);
+    }
+    50% {
+        transform: rotate(742.5deg) translate(-22.5%, -520%);
+    }
+    100% {
+        transform: rotate(585deg) translate(-45%, -1040%);
+    }
+}
+@keyframes fake-elem {
+    0% {
+        opacity: 0;
+        transform: translateY(-300%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes fake-elem-reverse {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-300%);
+    }
+}
+
+
+
+.balance {
+    position: relative;
+    left: -200px;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+}
+.ball-box, .ball-box-last {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.ball {
+    margin: auto 0 0 0;
+    width: 57px;
+    height: 57px;
+    background-color: rgb(119, 136, 153);
+    border-radius: 50%;
+}
+.ball-box:nth-child(1) .ball {
+    background-color: rgb(131, 155, 179);
+}
+.ball-box:nth-child(2) .ball {
+    background-color: rgb(92, 108, 124);
+}
+.ball-box:nth-child(3) .ball {
+    background-color: rgb(72, 85, 98);
+}
+.ball-box:nth-child(4) .ball {
+    background-color: rgb(55, 65, 75);
+}
+.ball-box:nth-child(5) .ball {
+    background-color: rgb(39, 47, 54);
+}
+.ball-box:nth-child(6) .ball {
+    background-color: rgb(24, 29, 34);
+}
+.ball-box-last .ball {
+    background-color: rgb(11, 13, 15);
+}
+.ball-box:first-child {
+    animation-name: ball-left;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.61,0,.51,.65);
+    animation-iteration-count:infinite;
+}
+.ball-box-last{
+    animation-name: ball-right;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.43,.44,.65,.98);
+    animation-iteration-count:infinite;
+}
+.ball-shadow, .ball-shadow-left, .ball-shadow-right {
+    width: 100%;
+    height: 15%;
+    border-radius: 75%;
+    box-shadow: 0px 100px 15px #1b1b1b;
+}
+.ball-shadow-left {
+    animation-name: ball-left-shadow;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.61,0,.51,.65);
+    animation-iteration-count:infinite;
+    
+}
+.ball-shadow-right {
+    animation-name: ball-right-shadow;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.43,.44,.65,.98);
+    animation-iteration-count:infinite;
+}
+
+@keyframes ball-left {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes ball-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+@keyframes ball-left-shadow {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(-0px);
+    }
+    100% {
+        transform: translateX(-0px);
+    }
+}
+@keyframes ball-right-shadow {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+
+
+
+
+
+
+
+
