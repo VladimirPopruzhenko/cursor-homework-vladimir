@@ -1,0 +1,19 @@
+mixin header() 
+    header.header 
+            nav.header__nav
+                .header__collumn 
+                    ul.header__nav_ul
+                        li
+                            a&attributes(header__referense)
+                                p.header__ref-text Home
+                        li
+                            a&attributes(header__referense)
+                                p.header__ref-text About
+                        li
+                            a&attributes(header__referense)
+                                p.header__ref-text Contact
+                .header__collumn 
+                    a&attributes(header__referense).header__logo
+                        p.header__ref-logo Landie
+                .header__collumn
+                    input&attributes(header__button_buy) 
