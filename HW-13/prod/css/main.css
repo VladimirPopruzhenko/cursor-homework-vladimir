@@ -38,8 +38,7 @@ header {
 
 header .logo {
     float: left;
-    height: 55px;
-    width: auto;
+    width: 243px; height: 65px;
     margin-top: 12px;
 }
 
