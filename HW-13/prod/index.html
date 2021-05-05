@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/screen.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/sprites.css">
 </head>
 <body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+            d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+        </svg>
+    </div>
     <header>
         <div class="wrapper">
             <div class="bg-logo logo"></div>
@@ -169,9 +178,9 @@
     <section class="reviews">
         <div class="wrapper">
             <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-            <div class="bg-arrow_left arrow-left"></div>
+            <div class="bg-arrow_left arrow-left prev" onclick="minusSlide()"></div>
             <div class="review-slider">
-                <div class="slide">
+                <div class="slide item">
                     <img src="img/review1.webp" alt="" class="main-review-img">
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -191,8 +200,32 @@
                     <div class="review-author"><div class="ava bg-review1_ava"></div><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
+                <div class="slide item">
+                    <img src="img/review1.webp" alt="" class="main-review-img">
+                    <p class="review-text">
+                        Все в
+                        восторге от
+                        данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало
+                        любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <div class="review-author"><div class="ava bg-review1_ava"></div><b>Константин</b><i>г.
+                        Днепропетровск</i></div>
+                </div>
+                <div class="slide item">
+                    <img src="img/review1.webp" alt="" class="main-review-img">
+                    <p class="review-text">
+                        Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                        дизайн
+                        уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                        года
+                        вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    </p>
+                    <div class="review-author"><div class="ava bg-review1_ava"></div><b>Константин</b><i>г.
+                        Днепропетровск</i></div>
+                </div>
             </div>
-            <div class="bg-arrow_right arrow-right"></div>
+            <div class="bg-arrow_right arrow-right next" onclick="plusSlide()"></div>
         </div>
     </section>
     <section class="delivery">
@@ -270,7 +303,9 @@
 
         </div>
     </footer>
+    <script src="./js/preloader.js"></script>
     <script src="./lib/plugins.js"></script>
     <script src="./js/video.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
