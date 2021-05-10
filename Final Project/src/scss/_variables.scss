@@ -1,0 +1,20 @@
+$main-color: #F58122;
+$play-music: linear-gradient(90deg, #F58122 0%, #F4A05B 23.75%, #F58122 48.22%, #F58122 48.23%, #F4A05B 75.31%, #F58122 100%);
+$gray1: #242530;
+$gray2: #FFFFFF;
+$gray3: #525257;
+
+//font-size
+
+%_48px{font-size:48px};
+%_40px{font-size:40px};
+%_36px{font-size:36px};
+%_32px{font-size:32px};
+%_20px{font-size:20px};
+%_18px{font-size:18px};
+%_16px{font-size:16px};
+%_14px{font-size:14px};
+%_12px{font-size:12px};
+@media (max-width: 1100px) {
+    
+}

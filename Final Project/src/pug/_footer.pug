@@ -1,0 +1,64 @@
+mixin footer() 
+    footer.footer
+        .footer__container.main-container 
+            .bg-circle-big 
+                svg(width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle( cx="240" cy="240" r="239" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .bg-circle-small-first
+                svg(width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle(cx="120" cy="120" r="120" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .bg-circle-small-second
+                svg(width="200" height="200" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle(cx="120" cy="120" r="120" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .footer__logo-collumn 
+                .footer__logo-img
+                    a(href="#")
+                        img(src="../img/header/logo.png", alt="CID FM 102.4")
+                .footer__social
+                    a(href="#" class="facebook")
+                .button-container-tablet
+                    +button_layout("Замовити пісню", "button-buy-song", "")
+                    +button_layout("Купити атрибутику", "button-buy-attributes", "")
+                .footer__copyright
+                    p.text © Медіа-холдинг CID Media Group, 2003-2021. Усі права захищені. 
+            .footer__copyright-tablet
+                    p.text © Медіа-холдинг CID Media Group, 2003-2021. Усі права захищені. 
+            .footer__contact-collumn    
+                .footer__contact-title 
+                    p.title Контакти
+                .footer__contact-list
+                    ul.list 
+                        li.mobile 
+                            p.item +38 (096) 869 6005
+                            p.item +38 (0332) 78 82 78
+                        li.email 
+                            p.item radiosidfm@gmail.com
+                        li.adress 
+                            p.item вул.Конякіна,18в. Луцьк. Волинська обл., Україна. 43024
+            nav.footer__navigation-collumn 
+                .footer__menu-title 
+                    p.title Меню
+                .footer__menu-list
+                    ul.nav-list 
+                        li.item-list
+                            a(href="") Головна
+                        li.item-list 
+                            a(href="") Програми та подкасти
+                        li.item-list 
+                            a(href="") Плейлист
+                        li.item-list 
+                            a(href="") Співпраця
+                        li.item-list 
+                            a(href="") Замовити пісню
+                        li.item-list 
+                            a(href="") Купити атрибутику
+            .footer__button-collumn 
+                .button-container
+                    +button_layout("Замовити пісню", "button-buy-song", "")
+                    +button_layout("Купити атрибутику", "button-buy-attributes", "")
+                        
+
+
+
+
+                

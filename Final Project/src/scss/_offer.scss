@@ -1,0 +1,130 @@
+@import "./_variables";
+@import "./_container";
+
+@mixin offer() {
+    .main {
+        &__offer-section {
+            width: 100%;
+            height: 400px;
+            background-color: $gray1;
+            overflow: hidden;
+            @media (max-width: 700px) {
+                height: 635px;
+            }
+        }
+        &__offer {
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            height: 100%;
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            @media (max-width: 700px) {
+                grid-template-rows: 50% 50%;
+                grid-template-columns: 1fr;
+            }
+            &-first, &-second {
+                position: relative;
+                z-index: 10;
+                display: grid;
+                grid-template-rows: auto 45% auto;
+                @media (max-width: 700px) {
+                    grid-template-rows: 27% 55% 18%;
+                }
+                max-width: 500px;
+                width: 100%;
+                align-items: center;
+                height: 80%;
+            }
+            .title-offer {
+                font-size: 32px;
+                font-family: "Play-Regular";
+                color: $gray2;
+                display: flex;
+                align-items: end;
+                height: 100%;
+                .title {
+                    margin-top: auto;
+                    height: auto;
+                    @media (max-width: 700px) {
+                        margin-top: 2%;                        
+                    }
+                }
+            }
+            .text-offer {
+                font-size: 18px;
+                margin: 0 auto;
+                @media (max-width: 1100px) {
+                    font-size: 16px;
+                    width: 85%;
+                }
+                @media (max-width: 700px) {
+                    font-size: 16px;
+                    width: 95%;
+                }
+                line-height: 24,3px;
+                font-family: "Play-Regular";
+                color: $gray2;
+            }
+            .button-offer {
+                display: flex;
+                height: 100%;
+                @include button_layout("button_layout", 165px, $false);
+                .button_layout {
+                    @include button_widht(165px);
+                }
+            }
+            .bg-line-big {
+                position: absolute;
+                top: 17%;
+                left: 50%;
+                @media (max-width: 700px) {
+                    transform: rotate(90deg);
+                    top: 30%;
+                    display: flex;
+                    left: 16%;
+                    margin-left: 34%;
+                    width: 2px;
+                }
+            }
+            .bg-line-small-left {
+                position: absolute;
+                display: flex;
+                top: 35%;
+                margin-left: -50%;
+                @media (max-width: 700px) {
+                    top: 17.5%;
+                    margin-left: 0%;
+                }
+            }
+            .bg-line-small-right {
+                position: absolute;
+                display: flex;
+                top: 35%;
+                margin-right: -50%;
+                @media (max-width: 700px) {
+                    top: 67%;
+                    margin-left: -50%;
+                }
+            }
+            .bg-circle-big {
+                top: -50%;
+                left: -16%;
+                @media (max-width: 700px) {
+                    top: -35%;
+                    left: -55%;
+                }
+            }
+            .bg-circle-small {
+                top: 45%;
+                right: -15%;
+                @media (max-width: 700px) {
+                    top: 75%;
+                    left: 70%;
+                }
+            }
+        }
+    }
+}

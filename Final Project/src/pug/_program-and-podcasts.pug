@@ -1,0 +1,16 @@
+include _variables.pug
+include _button.pug
+include _cardProgramAndPodcast.pug
+
+mixin program-and-podcasts()
+    section.main__program-and-podcasts-section 
+        .main__program-and-podcasts.main-container 
+            .main__proprogram-and-podcasts-title   
+                p.title Програми та подкасти
+            .main__proprogram-and-podcasts-block-galarry 
+                - for (var x = 1; x < 9; x++)
+                    +card("Район здорової людини", "Спростовуємо стереотипи про здоров’я", x)
+            .main__proprogram-and-podcasts-block-button 
+                +button_layout("Більше", "button-p-a-p", "")
+
+        

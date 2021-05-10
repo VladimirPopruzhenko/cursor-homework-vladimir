@@ -1,0 +1,8 @@
+
+mixin news_card(title, text, time, x)
+    a(href="#" class="referense-news") 
+        div(class="card_news card-news-number_"+ x)
+            .card_news__info
+                p.title #{title}
+                p.text #{text}
+                p.time #{time}
