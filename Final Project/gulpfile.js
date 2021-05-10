@@ -16,7 +16,7 @@ let fs = require('fs');
 
 let path = {
     build: { //путь к готовому проекту
-        html: project_folder + '/',
+        html: project_folder + '/html',
         css: project_folder + '/css/',
         fonts: project_folder + '/fonts/',
         js: project_folder + '/js/',
@@ -67,7 +67,7 @@ function browserSync(params) {
             baseDir: './' + project_folder + '/'
         },
         port: 3000,
-        notify: false
+        notify: true
     })
 }
 
