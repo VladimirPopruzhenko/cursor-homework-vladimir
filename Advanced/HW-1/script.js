@@ -77,7 +77,8 @@ document.body.append(DivAvarageValue);
 //Hard
 let RandomValue = Math.random() * 100;
 let Price = 750;
-let NetProfit = (Price / 2) - ((Price * RandomValue) / 100);
+let Discount = (Price * RandomValue) / 100;
+let NetProfit = (Price / 2) - Discount;
 let DivNetProfit = document.createElement('div');
 DivNetProfit.innerHTML = "<p>Сумма покупки " + Price.toFixed(2) + " грн. Скидка " + RandomValue.toFixed(2) + "%. Чистая прибыль " + NetProfit.toFixed(2) + " грн</p>";
 document.body.append(DivNetProfit);
