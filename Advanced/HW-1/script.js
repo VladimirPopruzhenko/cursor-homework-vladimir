@@ -36,9 +36,11 @@ DivSumValue.innerHTML = "<p>Сумма: " + SumValue + "</p>";
 document.body.append(DivSumValue);
 
 //Округление(в меньшую сторону) и сложение
-let RoundingSumValue = Math.floor(Math.Razer) + Math.floor(Math.Jbl) + Math.floor(Math.A4Tech);
+let RoundingSumValue = Math.floor(Math.Razer) + Math.floor(Math.Jbl) + 
+Math.floor(Math.A4Tech);
 let DivRoundingSumValue = document.createElement('div');
-DivRoundingSumValue.innerHTML = "<p>Округляем и складываем: " + RoundingSumValue + "</p>";
+DivRoundingSumValue.innerHTML = "<p>Округляем и складываем: " + 
+RoundingSumValue + "</p>";
 document.body.append(DivRoundingSumValue);
 
 function Rounding(value, bitPower) {
@@ -49,7 +51,8 @@ function Rounding(value, bitPower) {
 //Округляем сумму до сотен
 let RoundSumToHundreds = Rounding(RoundingSumValue, 2);
 let DivRoundSumToHundreds = document.createElement('div');
-DivRoundSumToHundreds.innerHTML = "<p>Округленная сумма до сотен: " + RoundSumToHundreds + "</p>";
+DivRoundSumToHundreds.innerHTML = "<p>Округленная сумма до сотен: " + 
+RoundSumToHundreds + "</p>";
 document.body.append(DivRoundSumToHundreds);
 
 function isPaired(value) {
@@ -58,20 +61,23 @@ function isPaired(value) {
 
 //Парная предыдущая сумма?
 let DivIsPairedSum = document.createElement('div');
-DivIsPairedSum.innerHTML = "<p>Предыдущая сумма парная - " + isPaired(RoundSumToHundreds) + "</p>";
+DivIsPairedSum.innerHTML = "<p>Предыдущая сумма парная - " + 
+isPaired(RoundSumToHundreds) + "</p>";
 document.body.append(DivIsPairedSum);
 
 //Сдача c 500 грн
 let InputValue = 500;
 let Surrender = InputValue - SumValue;
 let DivSurrender = document.createElement('div');
-DivSurrender.innerHTML = "<p>Сдача с " + InputValue + " грн: " + Surrender + " грн</p>";
+DivSurrender.innerHTML = "<p>Сдача с " + InputValue + " грн: " + 
+Surrender + " грн</p>";
 document.body.append(DivSurrender);
 
 //Середнее значение суммы
 let AvarageValue = SumValue / 3;
 let DivAvarageValue = document.createElement('div');
-DivAvarageValue.innerHTML = "<p>Среднее значение: " + AvarageValue.toFixed(2) + "</p>";
+DivAvarageValue.innerHTML = "<p>Среднее значение: " + 
+AvarageValue.toFixed(2) + "</p>";
 document.body.append(DivAvarageValue);
 
 //Hard
@@ -80,7 +86,9 @@ let Price = 750;
 let Discount = (Price * RandomValue) / 100;
 let NetProfit = (Price / 2) - Discount;
 let DivNetProfit = document.createElement('div');
-DivNetProfit.innerHTML = "<p>Сумма покупки " + Price.toFixed(2) + " грн. Скидка " + RandomValue.toFixed(2) + "%. Чистая прибыль " + NetProfit.toFixed(2) + " грн</p>";
+DivNetProfit.innerHTML = "<p>Сумма покупки " + 
+Price.toFixed(2) + " грн. Скидка " + RandomValue.toFixed(2) 
++ "%. Чистая прибыль " + NetProfit.toFixed(2) + " грн</p>";
 document.body.append(DivNetProfit);
 
 document.writeln(`<br>
@@ -93,4 +101,6 @@ document.writeln(`<br>
 <p>Предыдущая сумма парная - ${isPaired(RoundSumToHundreds)} </p>
 <p>Сдача с ${InputValue} грн: ${Surrender} грн</p>
 <p>Среднее значение: ${AvarageValue.toFixed(2)} </p>
-<p>Сумма покупки ${Price.toFixed(2)} грн. Скидка ${RandomValue.toFixed(2)}%. Чистая прибыль ${NetProfit.toFixed(2)} грн</p>`)
+<p>Сумма покупки ${Price.toFixed(2)} грн. Скидка 
+${RandomValue.toFixed(2)}%. Чистая прибыль 
+${NetProfit.toFixed(2)} грн</p>`)
