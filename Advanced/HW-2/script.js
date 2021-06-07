@@ -35,15 +35,19 @@ function QuestionBlockSwitch(value) {
     }
 }
 function SumWithPairing(n, m) {
+    let max = Math.max(n,m);
+    let min = Math.min(n,m);
     let sum = 0;
-    for(let i = n; i <= m; i++) {
+    for(let i = min; i <= max; i++) {
         sum += i;
     }
     return sum;
 }
 function SumWithoutPairing(n, m) {
+    let max = Math.max(n,m);
+    let min = Math.min(n,m);
     let sum = 0;
-    for(let i = n; i <= m; i++) {
+    for(let i = min; i <= max; i++) {
         if(!(n % 2 === 0)) sum += i++;
     }
     return sum;
