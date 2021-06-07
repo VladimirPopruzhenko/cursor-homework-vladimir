@@ -1,0 +1,198 @@
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+header, .body, footer {
+    width: 100%;
+    height: 500px;
+}
+footer {
+    width: 100%;
+    height: 435px;
+}
+header {
+    background: #ED4C5C;
+}
+.font-family {
+    font-family: Lato-Bold;
+}
+.container {
+    width: 1110px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.box {
+    width: 50%;
+    height: 500px;
+    display: inline-block;
+}
+.box_left {
+    float: left;
+} 
+.box_right {
+    float: right;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box_left .content {
+    padding-top: 122px;
+}
+.title {
+    width: 445px;
+    height: auto;
+    font-size: 36px;
+    line-height: 43px;
+    margin: 0 0 55px;
+}
+.text {
+    width: 445px;
+    height: auto;
+    font-family: Lato-Light;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0 0 47px;
+}
+.body .text {
+    width: 400px;
+}
+.referense {
+    vertical-align: middle;
+}
+.referense img {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+[src="img/apple.svg"] {
+    top: -2px;
+}
+[src="img/windows.svg"] {
+    top: -5px;
+}
+.box_right .content [src="img/Video_bg_left.png"] {
+    position: absolute;
+    width: 383px;
+    height: 267px;
+    left: 0;
+    top: 22%;
+    z-index: 1;
+}
+.box_right .content [src="img/Video_bg.png"] {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 445px;
+    height: 311px;
+    top: 17%;
+    z-index: 3;
+}
+.box_right .content [src="img/Video_bg_right.png"] {
+    position: absolute;
+    width: 383px;
+    height: 267px;
+    right: 0;
+    top: 22%;
+    z-index: 1;
+}
+.images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 10%;
+}
+.body .box_right .content {
+    padding-top: 122px;
+}
+.body .box_right .content .input_text {
+    width: 260px;
+    height: 60px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 19,2px;
+    padding-left: 31px;
+    margin-bottom: 24px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.body .box_right .content .input_text:first-child {
+    margin-right: 30px;
+}
+.body .box_right .content .input_text:nth-child(3) {
+    width: 100%;
+}
+.body .box_right .content select {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 19,2px;
+    padding: 0 31px;
+    margin-bottom: 24px;
+    background-image: url(../img/ChevronDownE70D.png);
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 50%;
+}
+.Submit {
+    width: 160px;
+    height: 50px;
+    background: #ED4C5C;
+    font-family: Lato-Light;
+    border: 1.5px solid #ED4C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+footer {
+    background-color: #FAFAFA;
+}
+.content-foot {
+    height: 435px;
+    width: 25%;
+    display: inline-block;
+    float: left;
+    padding-top: 85px;
+    padding-right: 30px;
+}
+.content-foot .title-foot {
+    width: 100%;
+    height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 33px;
+}
+.content-foot .p-content {
+    font-size: 12px;
+    font-family: Lato-Regular;
+    line-height: 160%;
+}
+.content-foot .p-content-bottom {
+    font-size: 12px;
+    font-family: Lato-Regular;
+    line-height: 160%;
+    margin-top: 141px;
+}
+.foot-img-social {
+    margin-top: 21px;
+}
+.foot-img-social img {
+    display: inline-block;
+    margin-right: 17px;
+}

@@ -1,0 +1,31 @@
+@import './_fontsIncludeMixin';
+
+@include font('Play-Bold', 'Play-Bold', '400', 'normal');
+@include font('Play-Regular', 'Play-Regular', '400', 'normal');
+@include font('Roboto-Black', 'Roboto-Black', '400', 'normal');
+@include font('Roboto-Light', 'Roboto-Light', '400', 'normal');
+@include font('Roboto-Medium', 'Roboto-Medium', '400', 'normal');
+@include font('Roboto-Regular', 'Roboto-Regular', '400', 'normal');
+@include font('SourceSansPro-Black', 'SourceSansPro-Black', '400', 'normal');
+@include font('Roboto-Bold', 'Roboto-Bold', '400', 'normal');
+@include font('SourceSansPro-Bold', 'SourceSansPro-Bold', '400', 'normal');
+@include font(
+	'SourceSansPro-ExtraLight',
+	'SourceSansPro-ExtraLight',
+	'400',
+	'normal'
+);
+@include font('SourceSansPro-Light', 'SourceSansPro-Light', '400', 'normal');
+@include font(
+	'SourceSansPro-SemiBold',
+	'SourceSansPro-SemiBold',
+	'400',
+	'normal'
+);
+@include font('Roboto-Thin', 'Roboto-Thin', '400', 'normal');
+@include font(
+	'SourceSansPro-Regular',
+	'SourceSansPro-Regular',
+	'400',
+	'normal'
+);

@@ -1,0 +1,45 @@
+mixin welcomPlayer()
+    section.main__welcome-section
+        .main__welcome-player.main-container
+            .bg-circle-big 
+                svg(width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle( cx="240" cy="240" r="239" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .bg-circle-small.first 
+                svg(width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle(cx="120" cy="120" r="120" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .bg-circle-small.second
+                svg(width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle(cx="120" cy="120" r="120" stroke="white" stroke-opacity="0.2" stroke-width="2")
+            .main__welcome-content 
+                .main__welcome-text
+                    p.welcome-text Слухати радіо твого улюбленого міста CID FM
+                .main__welcome-social
+                    a(class="facebook" href="#")
+                    a(class="music" href="#")
+                .main__welcome-play-stop 
+                    div(class="welcome-play-stop welcome-stop" id="welcome-play-stop" onclick="play_stopHeader()")
+                .main__welcome-range 
+                    .range
+                        <input type="range" min="0" max="100" step="1" value="0">
+                .main__music-cards
+                    .music-cards 
+                        .item-card 
+                            .title-block
+                                p.title Попередній трек
+                            .text-block
+                                p.text 23:35
+                                p.text A Fine Frenzy – Winter White
+                        .item-card 
+                            div(class="item-cards-play cards-stop" id="cards-play-stop" onclick="play_stopHeader()")
+                            div.contant 
+                                .title-block
+                                    p.title Зараз грає
+                                .text-block
+                                    p.text 23:46
+                                    p.text Sia – My Old Santa Claus
+                        .item-card 
+                            .title-block
+                                p.title Попередній трек
+                            .text-block
+                                p.text 23:46
+                                p.text O.TORVALD – Крик

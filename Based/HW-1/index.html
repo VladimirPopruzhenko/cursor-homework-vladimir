@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+        #homeworkH_1
+        {
+            text-align: center;
+            border: none;
+            margin: 20px auto 0 auto;
+            padding: 0;
+        }
+        #homeworkH_1 h1 {
+            margin: 0;
+        }
+        .block {
+            position: relative;
+            width: 50%;
+            height: auto;
+            border: 7px solid #ffdc91;
+            margin: 0 auto;
+            padding: 0 50px;
+            padding-bottom: 20px;
+            margin-top: 15px;
+        }
+        h2 {
+            font-weight: normal;
+        }
+        .galary {
+            text-align: center;
+        }
+        .galary h2 {
+            margin: 35px 0 0 0;
+        }
+    </style>
+    <title>Шпаргалка Git</title>
+</head>
+<body>
+    <div  id="homeworkH_1" class="block"><h1>Home work: Git</h1></div>
+    <div class="block" id="Base">
+        <h1>Base:</h1>
+        <ul>
+            <li><p>git config --global user.name "Your name" - глобально установить имя пользователя;</p></li>
+            <li><p>git config --global user.email "Your@email" - глобально установить email пользователя;</p></li>
+            <li><p>git init - инициализация репозитория на github;</p></li>
+            <li><p>git status - отображения состояния файлов;</p></li>
+            <li><p>git add - добавляет содержимое репозитория в определенное место, с которого потом будет сделан слепок проекта;</p></li>
+            <li><p>git commit - делает слепок проекта с того же места, куда и были добавлены файлы командой git add;</p></li>
+            <li><p>git log - выводит список коммитов в данном репозитории в обратном хронологическом порядке;</p></li>
+            <li><p>git checkout - перемещение указателя между коммитами;</p></li>
+            <li><p>git branch - управление ветками;</p></li>
+            <li><p>git push - выгрузка содержимого локального репозитория на удаленный;</p></li>
+            <li><p>git pull - выгрузка с удаленного репозитория на локальный;</p></li>
+            <li><p>git merge - объеденяет текущую ветку с такой же веткой из репозитория;</p></li>
+            <li><p>git clone - копировать репозиторий.</p></li>
+        </ul>
+        <h2>.gitignore:</h2>
+        <p>Нужен для скрытия файлов и папок от системы контроля версий Git. Обычно скрывают конфигурационные файлы (особенно с паролями), временные файли и папки.</p>
+    </div>
+    <br>
+    <div class="block" id="Advanced">
+        <h1>Advanced:</h1>
+        <ul>
+            <li><p>git revert - отменяет необходимый коммит;</p></li>
+            <li><p>git reset - отменяет индексацию выбранных файлов, то есть убирает их из той области с которой будет сделан слепок;</p></li>
+            <li><p>git rebase - объединяет изменения сделанные в одной ветке;</p></li>
+            <li><p>git cherry-pick - переносит определенные коммиты из одного места репозитория в другое;</p></li>
+            <li><p>git stash - откладывает изменения в робочей копии, чтобы применить их позже.</p></li>
+        </ul>
+        <div class="galary">
+            <h2>SSH:</h2>
+            <img src="img/3.JPG" alt="not found">
+            <img src="img/2.JPG" alt="not found">
+            <img src="img/1.JPG" alt="not found">
+        </div>
+    </div>
+</body>
+</html>

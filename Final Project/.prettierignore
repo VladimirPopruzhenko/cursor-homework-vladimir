@@ -1,4 +1,0 @@
-# Ignore all JS files:
-*.js
-*.scss
-./src/pug/*.html

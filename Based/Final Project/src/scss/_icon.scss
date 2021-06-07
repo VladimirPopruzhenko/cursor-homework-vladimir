@@ -1,0 +1,35 @@
+@import "./_variables";
+@import "./_container";
+
+@mixin facebookIcon() {
+    .facebook {
+        background-image: url(../img/welcomPlayer/facebook.svg);
+        width: 65px;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-position: 49% center;
+        border-radius: 50%;
+        border: 1px solid $gray2;
+    }
+    .facebook:hover {
+        background-image: url(../img/welcomPlayer/facebookHOVER.svg);
+        border: 1px solid $main-color;
+        cursor: pointer;
+    }
+}
+@mixin musicIcon() {
+    .music {
+        background-image: url(../img/welcomPlayer/music.svg);
+        width: 65px;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-position: 49% center;
+        border-radius: 50%;
+        border: 1px solid $gray2;
+    }
+    .music:hover {
+        background-image: url(../img/welcomPlayer/musicHOVER.svg);
+        border: 1px solid $main-color;
+        cursor: pointer;
+    }
+}

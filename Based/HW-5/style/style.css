@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+.container {
+    width: 1384px;
+    height: auto;
+    padding: 0px 132px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template: 100px 500px 500px 160px 630px 700px / 1120px;   
+    grid-gap: 155px; 
+}

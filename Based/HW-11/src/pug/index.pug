@@ -1,0 +1,91 @@
+include variables.pug
+include header.pug
+include footer.pug 
+include offerBlock.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        title Fuck pug & gulp
+    body 
+        +header()
+        main.main 
+            section.main__welcome 
+                .main__content
+                    .main__content-text
+                        .main__title 
+                            p.main__title-block Introduce Your Product Quickly & Effectively
+                        .main__text 
+                            p.main__text-block.
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                                Aenean commodo ligula eget dolor. 
+                                                Aenean massa. 
+                                                Cum sociis natoque 
+                                                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            br
+                            p.main__text-block.
+                                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                                                Nulla consequat massa quis enim.
+                        .main__referense-button
+                            .main__referense-button-block
+                                a&attributes(referense).main-ref-item 
+                                    p Purchase IU Kit 
+                                a&attributes(referense).main-ref-item 
+                                    p Learn More
+                    .main__content-text
+            section.main__detailed-information 
+                .main__content 
+                    .main__content-text
+                        .main__title
+                            p.main__title-block Light, Fast & Powerful
+                        .main__text 
+                            p.main__text-block.
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                                Aenean commodo ligula eget dolor. 
+                                                Aenean massa. 
+                                                Cum sociis natoque 
+                                                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            br
+                            p.main__text-block.
+                                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                                                Nulla consequat massa quis enim.
+                        .main__mini-blocks-info 
+                            .main__mini-block
+                                .main__mini-block-picture-title
+                                .main__mini-block-title
+                                    p.main__mini-title Title Goes Here
+                                .main__mini-block-text 
+                                    p.main__mini-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            .main__mini-block
+                                .main__mini-block-picture-title
+                                .main__mini-block-title
+                                    p.main__mini-title Title Goes Here
+                                .main__mini-block-text 
+                                    p.main__mini-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.  
+            section.main__offer
+                .main__content 
+                    +offerBlock(calcBlockOffer)
+            section.main__cost 
+                .semicircle
+                    .left-part
+                    .right-part
+                .main__content 
+                    .main__block-info 
+                        .main__title-info
+                            p.main__title A Price To Suit Everyone
+                        .main__text-info 
+                            p.main__text.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                        Aenean commodo ligula eget dolor. Aenean massa. 
+                                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                        .main__cost-text
+                            p.main__text-cost $#{cost}
+                            p.main__text-info-about-cost UI Design Kit
+                        .main__button-buy 
+                            p.main__above-button See, One price. Simple.
+                            input&attributes(button_Purchase_Now)
+        +footer()
