@@ -82,3 +82,15 @@ let NetProfit = (Price / 2) - Discount;
 let DivNetProfit = document.createElement('div');
 DivNetProfit.innerHTML = "<p>Сумма покупки " + Price.toFixed(2) + " грн. Скидка " + RandomValue.toFixed(2) + "%. Чистая прибыль " + NetProfit.toFixed(2) + " грн</p>";
 document.body.append(DivNetProfit);
+
+document.writeln(`<br>
+<p>Звіт!</p>
+<p>Максимальное число: ${MaxValue} </p>
+<p>Минимальное число:  ${MinValue} </p>
+<p>Сумма: ${SumValue} </p>
+<p>Округляем и складываем: ${RoundingSumValue} </p>
+<p>Округленная сумма до сотен: ${RoundSumToHundreds} </p>
+<p>Предыдущая сумма парная - ${isPaired(RoundSumToHundreds)} </p>
+<p>Сдача с ${InputValue} грн: ${Surrender} грн</p>
+<p>Среднее значение: ${AvarageValue.toFixed(2)} </p>
+<p>Сумма покупки ${Price.toFixed(2)} грн. Скидка ${RandomValue.toFixed(2)}%. Чистая прибыль ${NetProfit.toFixed(2)} грн</p>`)
