@@ -1,0 +1,8 @@
+// function getRandomArray(length, min, max) {
+//     let arr = [];
+//     for(let i = 0; i < length; i++) {
+//         arr[i] = Number((min + (Math.random() * (max-min))).toFixed(0));
+//     }
+//     return arr;
+// }
+// console.log(getRandomArray(10, 1, 10));
