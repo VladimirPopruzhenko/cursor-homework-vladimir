@@ -1,59 +1,53 @@
-let N = null, M = null;
-function Menu() {
-    while(!(typeof(N) === "number")) {
-        N = QuestionBlockSwitch(isNumberInt(FirstQuestion()));
+let n = null, m = null;
+let menu = () => {
+    while(!(typeof(n) === "number")) {
+        n = questionBlockSwitch(isNumberInt(firstQuestion()));
     }
-    while(!(typeof(M) === "number")) {
-        M = QuestionBlockSwitch(isNumberInt(SecondQuestion()));
+    while(!(typeof(m) === "number")) {
+        m = questionBlockSwitch(isNumberInt(secondQuestion()));
     }
-    Result(PairingQuestion() ? SumWithPairing(N, M) : SumWithoutPairing(N, M));
-    N = null;
-    M = null;
+    result(pairingQuestion()? sumPairing(n, m, false) : sumPairing(n, m, true));
 }
-function FirstQuestion() {
+let firstQuestion = () => {
     return prompt("Введите целочисленное значение N:")
 }
-function SecondQuestion() {
+let secondQuestion = () => {
     return prompt("Введите целочисленное значение M:")
 }
-function PairingQuestion() {
+let pairingQuestion = () => {
     return confirm("Учитывать парные числа?");
 }
-function isNumberInt(value) {
-    if(Number(value) === NaN || Number(value) === undefined) {
+let isNumberInt = (value) => {
+    if(isNaN(value) || !value) {
         return false;
     } else if(Number.isInteger(Number(value))) {
          return Number(value);
     }
 }
-function QuestionBlockSwitch(value) {
-    switch (typeof(value)) {
-        case "number":
-            return value;    
-        default:
-            alert("Введите целое число!");
+let questionBlockSwitch = (value) => {
+    if (typeof(value) == "number") {
+        return value;    
+    } else {
+        alert("Введите целое число!");
     }
 }
-function SumWithPairing(n, m) {
+let sumPairing = (n, m, withOfWithout) => {
     let max = Math.max(n,m);
     let min = Math.min(n,m);
     let sum = 0;
-    for(let i = min; i <= max; i++) {
-        sum += i;
+    if(withOfWithout) {
+        for(let i = min; i <= max; i++) {
+            if(!(i % 2 === 0)) sum += i;
+        }
+    }
+    else {
+        for(let i = min; i <= max; i++) {
+            sum += i;
+        }
     }
     return sum;
 }
-function SumWithoutPairing(n, m) {
-    let max = Math.max(n,m);
-    let min = Math.min(n,m);
-    let sum = 0;
-    for(let i = min; i <= max; i++) {
-        if(!(n % 2 === 0)) sum += i++;
-    }
-    return sum;
-}
-function Result(value) {
+let result = (value) => {
     alert("Результат: " + value);
 }
-
-Menu();
+menu();
